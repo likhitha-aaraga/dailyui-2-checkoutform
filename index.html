@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Payment</title>
+    </head>
+    <body>
+        <div class="main__container">
+            <div class="sub__container">
+                <div class="container__paypal">
+                    <div class="container__paypal__left">
+                        <form>
+                            <input
+                                type="radio"
+                                name="checkout__method"
+                                value="paypal"
+                            />
+                            <label for="paypal">Paypal</label><br />
+                        </form>
+                        <p>
+                            PayPal is the faster, safer way to send and receive
+                            money or make an online payment. Get started or
+                            create a merchant account to accept payments.
+                        </p>
+                    </div>
+                    <div class="container__paypal__right">
+                        <img
+                            src="./images/paypal-logo-transparent-free-png.webp"
+                            alt="paypal__logo"
+                        />
+                    </div>
+                </div>
+                <div class="container__creditcard">
+                    <div class="container__creditcard__left">
+                        <form>
+                            <input
+                                type="radio"
+                                name="checkout__method"
+                                value="credit"
+                            />
+                            <label for="credit">Credit Card</label><br />
+                        </form>
+                        <p>
+                            Safe money transfer with your bank. We accept
+                            <strong>Discover</strong> Visa, Master, Amex.
+                        </p>
+                    </div>
+                    <div class="container__creditcard__right">
+                        <img
+                            src="./images/credit card.avif"
+                            alt="creditcard image"
+                        />
+                    </div>
+                </div>
+                <div class="checkout">
+                    <label for="cardnumber">Card Number</label> <br />
+                    <input
+                        type="text"
+                        name="cardnumber"
+                        placeholder="1111-2222-3333-4444"
+                    />
+                    <br />
+                    <label for="cardname">Name on Card</label><br />
+                    <input
+                        type="text"
+                        name="cardname"
+                        placeholder="Enter the name on card"
+                    />
+                    <br />
+
+                    <label for="expmonth">Expiry Month</label> <br />
+                    <input
+                        type="text"
+                        name="expmonth"
+                        placeholder="MM/YY"
+                    /><br />
+                    <label for="cvvcode">CVV Code</label> <br />
+                    <input
+                        type="text"
+                        name="cvvcode"
+                        placeholder="cvv code"
+                    /><br />
+                </div>
+                <div class="submit__button">
+                    <input
+                        class="submit__button"
+                        type="button"
+                        name="submit"
+                        value="Submit"
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
